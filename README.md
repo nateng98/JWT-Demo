@@ -36,16 +36,13 @@ curl -X POST http://127.0.0.1:5000/login \
 ```
 A token will be printed on console
 
-4. If you haven't modified the secret key, test `check_permission` with this command
+4. Run this command to check for permission. Remember to replace `your_token_here` with your actual token
 
 ```bash
 curl -X POST http://127.0.0.1:5000/check_permission \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImV4cCI6MTcyNjY3MjQ5N30.cM0N729j6x32LWIX187MoQZs6da4CVh401ARSvJ2fBU" \
+-H "Authorization: Bearer your_token_here" \
 -H "Content-Type: application/json" \
 -d '{"permission": "write"}'
 ```
-Otherwise, replace this token with the one you get after logging in
-
-`"Authorization: Bearer your_token_here"`
 
 [More about JWT and its libraries](https://jwt.io/)
