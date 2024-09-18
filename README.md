@@ -22,7 +22,7 @@ token = jwt.encode({
 
 1. Start json-server
 ```bash
-json-server --watch db.json --port 8000
+json-server --watch db.json --port 5000
 ```
 2. Open a different terminal and run app.py
 ```bash
