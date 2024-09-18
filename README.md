@@ -9,12 +9,12 @@
 A token will be generate with using id, expiration time and secret key
 ```py
 token = jwt.encode({
-		'userId': account['id'],
-		'exp': datetime.datetime.now(
-				datetime.UTC
-		) + datetime.timedelta(
-				minutes=5
-		)
+	'userId': account['id'],
+	'exp': datetime.datetime.now(
+		datetime.UTC
+	) + datetime.timedelta(
+		minutes=5
+	)
 }, app.config['SECRET_KEY'], algorithm='HS256')
 ```
 
