@@ -1,0 +1,24 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "password": "password456"
+    }
+  ],
+  "permissions": [
+    {
+      "id": 1,
+      "permissions": ["read", "write"]
+    },
+    {
+      "id": 2,
+      "permissions": ["read"]
+    }
+  ]
+}
